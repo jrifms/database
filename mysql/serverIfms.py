@@ -62,7 +62,7 @@ class ServidorIFMS:
         Registra um manipulador de sinal para lidar com o encerramento correto do servidor.
         """
         try:
-            port = 9009
+            port = 9004
             handler = GerenciaRequisicao
             with socketserver.TCPServer(("", port), handler) as self.server:
                 print(f"Rodando na Porta {port}")
